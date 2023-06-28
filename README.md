@@ -13,7 +13,6 @@ jq command
 To install jq:
 
 Unbuntu: sudo apt-get install jq
-
 Homebrew: brew install jq
 
 ## Installation
