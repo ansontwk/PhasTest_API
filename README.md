@@ -2,7 +2,13 @@
 Automation of PHASTEST API Submission and Retrieval. Based on https://phastest.ca/
 
 ## Prerequisites
-Unix/macOS, jq command (Tested on Ubuntu 20.04 and macOS Ventura 13.4)
+OS:
+Unix/macOS
+
+Programs:
+jq command 
+
+(Tested on Ubuntu 20.04 and macOS Ventura 13.4)
 
 To install jq:
 Unbuntu: sudo apt-get install jq
