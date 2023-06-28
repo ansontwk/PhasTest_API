@@ -5,7 +5,7 @@ command -v jq >/dev/null 2>&1 || { echo >&2 "Error: jq command not found. Please
 
 #help page
 function print_help {
-    echo "Usage: bash phastest_api.sh [-h|--help] <[--submitjob][--getresults]> [--outDir DIR][--inputDir DIR]"
+    echo "Usage: bash phastest_api.sh [-h|--help] <[--submitjob][--getresults]> [--outDir DIR][--inputDir DIR][--cleanup]"
     echo "Automates the submission of bacterial assemblies to PHASTEST and the retrieval of summaries."
     echo ""
     echo "Options:"
