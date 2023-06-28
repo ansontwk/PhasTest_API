@@ -11,7 +11,9 @@ jq command
 (Tested on Ubuntu 20.04 and macOS Ventura 13.4)
 
 To install jq:
+
 Unbuntu: sudo apt-get install jq
+
 Homebrew: brew install jq
 
 ## Installation
