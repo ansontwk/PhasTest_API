@@ -5,7 +5,11 @@ Automation of PHASTEST API Submission and Retrieval. Based on https://phastest.c
 Command Usage: 
 
 bash phastest_api.sh [-h|--help] <[--submitjob][--getresults]> [--outDir DIR][--inputDir DIR][--cleanup]
-Example: bash 
+
+Example:
+ bash phastest_api.sh --submitjob --inputDir ./00.fnafiles
+ bash phastest_api.sh --getresults --outDir ./01.phastest_results
+ bash phastest_api.sh --getresults --outDir ./01.phastest_results --cleanup 
 
 Installation:
 1. Download phastest_api.sh
