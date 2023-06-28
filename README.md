@@ -7,11 +7,12 @@ Automation of PHASTEST API Submission and Retrieval. Based on https://phastest.c
 Input path must include genome contig files in the format of ".fna"
 Output folder will contain a collection of zipped files, each with the prophage summaries.
 
-Default input file is working directory. change it using the --inputDir flag
+Default input file is working directory, change it using the --inputDir flag
 
 `bash phastest_api.sh [-h|--help] <[--submitjob][--getresults]> [--outDir DIR][--inputDir DIR][--cleanup]`
 
 Example:
+
  `bash phastest_api.sh --submitjob --inputDir ./00.fnafiles`
 
 
@@ -27,7 +28,9 @@ Example:
 
 Modes:
 --submitjob - Parses the genome contig files into the phastest API. Only accepts .fna fasta files and the program will automatically detect if it is a multi-fasta file.
---getresults - Gets the results of job submissions based on json file inputs. (**Very important**) Please run this after running submit job and allow time for Phastest to run your samples.
+
+--getresults - Gets the results of job submissions based on json file inputs. 
+(**Very important**) Please run this after running submit job and allow time for Phastest to run your samples.
 
 Note: Speed in which your samples are ready depends on PHASTEST servers and queue times. This script only automates the file upload and data retrieval. 
 
