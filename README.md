@@ -5,10 +5,10 @@ Automation of PHASTEST API Submission and Retrieval. Based on https://phastest.c
 OS:
 Unix/macOS
 
-Programs:
-jq command 
-
 (Tested on Ubuntu 20.04 and macOS Ventura 13.4)
+
+Programs:
+jq command
 
 To install jq:
 
@@ -31,7 +31,7 @@ Default input file is working directory, change it using the --inputDir flag
 
 `bash phastest_api.sh [-h|--help] <[--submitjob][--getresults]> [--outDir DIR][--inputDir DIR][--cleanup]`
 
-Example:
+### Example:
 
  `bash phastest_api.sh --submitjob --inputDir ./00.fnafiles`
 
@@ -42,7 +42,7 @@ Example:
  `bash phastest_api.sh --getresults --outDir ./01.phastest_results --cleanup` 
 
 
-Modes:
+### Modes:
 
 --submitjob - Parses the genome contig files into the phastest API. Only accepts .fna fasta files and the program will automatically detect if it is a multi-fasta file.
 
