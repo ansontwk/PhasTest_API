@@ -1,5 +1,8 @@
-# PhasTest_API
-Automation of PHASTEST API Submission and Retrieval. Based on https://phastest.ca/
+# PHASTEST_API
+Utility Script for the automation of PHASTEST API Submission and Retrieval. Based on https://phastest.ca/ 
+
+Reference
+Wishart DS, Han S, Saha S, et al. PHASTEST: faster than PHASTER, better than PHAST. Nucleic Acids Res. 2023;51(W1):W443-W450. doi:10.1093/nar/gkad382
 
 ## Prerequisites
 
@@ -47,7 +50,7 @@ Default input file is working directory, change it using the --inputDir flag
 
 ### Modes:
 
---submitjob - Parses the genome contig files into the phastest API. Only accepts .fna fasta files and the program will automatically detect if it is a multi-fasta file.
+--submitjob - Parses the genome contig files into the phastest API. Only accepts .fna fasta files and the script will automatically detect if it is a multi-fasta file.
 
 --getresults - Gets the results of job submissions based on json file inputs. 
 (**Very important**) Please run this after running submit job and allow time for Phastest to run your samples.
