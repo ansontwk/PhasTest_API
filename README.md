@@ -23,8 +23,8 @@ To install jq:
 
 ## Installation
 
-1. Download phastest_api.sh
-2. run "chmod +x phastest_api.sh" to enable execution of the code
+1. Download `phastest_api.sh`
+2. run `chmod +x phastest_api.sh` to enable execution of the code
 
 
 ## Usage
