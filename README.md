@@ -2,8 +2,7 @@
 Utility Script for the automation of PHASTEST API Submission and Retrieval. Based on https://phastest.ca/ 
 
 Reference
-
-Wishart DS, Han S, Saha S, et al. PHASTEST: faster than PHASTER, better than PHAST. Nucleic Acids Res. 2023;51(W1):W443-W450. doi:10.1093/nar/gkad382
+- Wishart DS, Han S, Saha S, et al. PHASTEST: faster than PHASTER, better than PHAST. Nucleic Acids Res. 2023;51(W1):W443-W450. doi:10.1093/nar/gkad382
 
 ## Prerequisites
 
@@ -14,13 +13,12 @@ Unix/macOS
 
 
 ### Programs
-jq command
+`jq` command
 
 To install jq:
 
-Ubuntu: sudo apt-get install jq
-
-Homebrew: brew install jq
+- Ubuntu: `sudo apt-get install jq`
+- Homebrew: `brew install jq`
 
 
 ## Installation
@@ -31,10 +29,9 @@ Homebrew: brew install jq
 
 ## Usage
 
-Input path must include genome contig files in the format of ".fna"
-Output folder will contain a collection of zipped files, each with the prophage summaries.
-
-Default input file is working directory, change it using the --inputDir flag
+- Input path must include genome contig files in the format of `.fna`
+- Output folder will contain a collection of zipped files, each with the prophage summaries.
+- Default input file is working directory, change it using the `--inputDir` flag
 
 `bash phastest_api.sh [-h|--help] <[--submitjob][--getresults]> [--outDir DIR][--inputDir DIR][--cleanup]`
 
@@ -51,12 +48,14 @@ Default input file is working directory, change it using the --inputDir flag
 
 ### Modes:
 
---submitjob - Parses the genome contig files into the phastest API. Only accepts .fna fasta files and the script will automatically detect if it is a multi-fasta file.
+`--submitjob` 
+- Parses the genome contig files into the PHASTEST API. Only accepts `.fna` fasta files and the script will automatically detect if it is a multi-fasta file.
 
---getresults - Gets the results of job submissions based on json file inputs. 
+`--getresults` 
+- Gets the results of job submissions based on JSON file inputs. 
 (**Very important**) Please run this after running submit job and allow time for Phastest to run your samples.
 
-Note: Speed in which your samples are ready depends on PHASTEST servers and queue times. This script only automates the file upload and data retrieval. 
+Note: The speed at which your samples are ready depends on PHASTEST servers and queue times. This script only automates the file upload and data retrieval. 
 
 
 
